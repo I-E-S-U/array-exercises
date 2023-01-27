@@ -24,3 +24,13 @@ document.getElementById('array-ex5').innerHTML = `The array has length ${beatles
 // Exercise 6
 let beatles1 = beatles.sort()
 document.getElementById('array-ex6').innerHTML = beatles1
+
+// Array-list
+let text = `<ul>`
+beatles.forEach(listFunction)
+text += `</ul>`
+document.getElementById('array-list').innerHTML = text
+
+function listFunction(string) {
+    text += `<li>${string}</li>`
+}
